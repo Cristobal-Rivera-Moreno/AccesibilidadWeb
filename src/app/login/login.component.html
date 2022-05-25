@@ -1,0 +1,52 @@
+
+<!-- <link rel="stylesheet" [href]="sanitizer.bypassSecurityTrustResourceUrl(cssUrl)"> -->
+<body id="mybody" [ngClass]="{grises:cont}">
+  
+<div class="container mt-5">
+  <div class="dropdown " id="drop">
+ 
+  <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/imgs/accesibilidad.png" alt=""></button>
+  <h1 [style.font-size.px]="font_size+20" [style.font-family]="font_h">  LOG IN</h1>
+ 
+ <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" style="background: #b4bdff;" (click)="stop($event)" >
+    <a class="dropdown-item"  (click)="aumentarFont()" >Aumentar texto
+      <i class="icon-zoom-in"></i>
+    </a>
+    <a class="dropdown-item" href="#" (click)="disminuirFont()">Disminuir texto
+      <i class="icon-search-minus"></i>
+
+    </a>
+    <a class="dropdown-item" (click)="escalaGris()" href="#">Escala de grises
+
+      <i class="icon-contrast"></i>
+    </a>
+     <!-- <button class="btn  dropdown-toggle" (click)="cambiarFont()" type="button" id="dropdownMenuFont" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cambiar fuente</button> -->
+     <a class="dropdown-item" href="#" (click)="cambiarFont()">Cambiar fuente
+
+      <i class="icon-refresh"></i>
+     </a>
+    
+  </div>
+</div>
+ <hr size="20px" color="blue" width="40%">
+<div class="form">
+  <form [formGroup]="form" (ngSubmit)="login()" >
+  <div class="form-part">
+    <label [style.font-size.px]="font_size" [style.font-family]="font_p" for="user">Usuario</label>
+    <input [style.font-size.px]="font_size" [style.font-family]="font_p"  type="text" id="user" formControlName="user">
+  </div>
+  <div class="form-part">
+    <label [style.font-size.px]="font_size" [style.font-family]="font_p" for="pass">Contraseña</label>
+    <input [style.font-size.px]="font_size" [style.font-family]="font_p" type="password" id="pass" formControlName="pass">
+  </div>
+  <div class="but">
+    <button [style.font-size.px]="font_size" [style.font-family]="font_p" type="submit">Log in</button>
+    <button  [style.font-size.px]="font_size" [style.font-family]="font_p" type="reset">Limpiar</button>
+  </div> 
+
+</form>
+</div>
+
+
+</div>
+</body>

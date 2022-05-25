@@ -1,0 +1,20 @@
+.container{
+    height: 100%;
+    background-attachment: fixed;
+}
+.card-columns{
+    background-image: url('../../assets/imgs/textura.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-radius: 15px;
+    margin-top: 2em;
+    padding: 1em;
+    
+}
+.card{
+    background: #b4bdff;
+}
+p{
+    font-weight: 800;
+}

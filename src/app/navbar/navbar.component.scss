@@ -1,0 +1,22 @@
+img{
+    width: 50px;
+    background: antiquewhite;
+    border-radius: 15px;
+}
+
+[class^="icon-"]{
+    font-size: 20px;
+}
+.icon-disability{
+    color: #b4bdff;
+    font-size: 30px;
+}
+button{
+    color: #b4bdff;
+}
+button:hover{
+    color: #b4bdff;
+}
+.dropdown-menu a:hover{
+    cursor: pointer;
+}
