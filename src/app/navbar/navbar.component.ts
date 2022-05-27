@@ -1,17 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 import { AccesibilidadService } from '../shared/accesibilidad.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  @Output() band=new EventEmitter<Boolean>();
 
-  constructor(public accesibilidad:AccesibilidadService) { }
+  constructor(public accesibilidad:AccesibilidadService,private router:Router) { }
 
   ngOnInit(): void {
+    
   }
-  stop(event:any):void{
-    event.stopPropagation();
+  logOut():void{
+
+    this.band.emit(false);
+    this.router.navigate(['/']);
   }
+
 }

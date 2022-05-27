@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AccesibilidadService } from '../shared/accesibilidad.service';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(public accesibilidad:AccesibilidadService) { }
 
   ngOnInit(): void {
   }

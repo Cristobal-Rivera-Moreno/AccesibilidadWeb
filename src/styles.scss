@@ -3,9 +3,7 @@
 
 
 
-.white{
-    filter:grayscale(100%);
-}
+
 .grises{
     filter: grayscale(1);
    
@@ -21,7 +19,6 @@ body{
     
     width: 100%;
     height: 100%;
-    background: aquamarine;
     background-image:url("./assets/imgs/wallpaper2.png");
     background-repeat: no-repeat;
     background-attachment: fixed;

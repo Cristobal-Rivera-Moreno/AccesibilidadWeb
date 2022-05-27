@@ -9,8 +9,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'home',component:HomeComponent},
   {path:'about',component:AboutComponent},
-  {path:'navbar',component:NavbarComponent},
-  
+  {path:'navbar',component:NavbarComponent}
+
   
   
 ];

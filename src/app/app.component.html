@@ -1,6 +1,6 @@
-<body [ngClass]="{grises:accesibilidad.cont}">
+<body [ngClass]="{grises:accesibilidad.cont,pos:!band}">
 <app-navbar *ngIf="band" ></app-navbar>
-<app-login [ngClass]="'black'" *ngIf="!band" (band)="active()" #log  ></app-login>
+<app-login  *ngIf="!band" (band)="active()" class="log"  ></app-login>
 <div  class="container"  >
   <router-outlet></router-outlet>
 </div>
